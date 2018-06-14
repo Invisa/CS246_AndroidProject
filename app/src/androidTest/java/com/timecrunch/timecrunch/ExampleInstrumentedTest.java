@@ -1,4 +1,4 @@
-package cs246.priorengagement.feature;
+package com.timecrunch.timecrunch;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("cs246.priorengagement.feature.test", appContext.getPackageName());
+        assertEquals("com.timecrunch.timecrunch", appContext.getPackageName());
     }
 }

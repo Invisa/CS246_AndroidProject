@@ -1,4 +1,4 @@
-package cs246.priorengagement.feature;
+package com.timecrunch.timecrunch;
 
 import org.junit.Test;
 
