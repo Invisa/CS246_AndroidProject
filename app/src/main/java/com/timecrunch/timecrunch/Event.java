@@ -36,7 +36,7 @@ public class Event {
 
     public void () setDefaultTimeStart() {
         // Parse in string from google calander day events
-        //find first available empty time Set timeStart to next hour (ex: if its 7:55, set to 8:00)
+        //find first available  empty time Set timeStart to next hour (ex: if its 7:55, set to 8:00)
         //return empty time to defaultTimeStart
 
         //rules 1 must be empty in calender
