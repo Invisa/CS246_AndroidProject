@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     DbHelper dbHelper;
     ArrayAdapter<String> mAdapter;
-    ListView FirstTask;
+    ListView firstTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         dbHelper = new DbHelper(this);
 
-        FirstTask = (ListView)findViewById(R.id.FirstTask);
+        firstTask = (ListView)findViewById(R.id.firstTask);
 
         loadTaskList();
 
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<String> taskList = dbHelper.getTaskList();
         if (mAdapter==null) {
             mAdapter = new ArrayAdapter<String>(this,R.layout.row,R.id.task_title,taskList);
-            FirstTask.setAdapter(mAdapter);
+            firstTask.setAdapter(mAdapter);
         }
         else{
             mAdapter.clear();
