@@ -30,36 +30,36 @@ public class Event {
     Boolean sunday;
 
 
-    // Default Constructor
-    public Event() {
-        title = NULL;
-        location = NULL;
-        gMaps = NULL;
-        gDatabase = NULL;
-
-
-        defaultEventStart = NULL;
-        timeAMPM = NULL;
-        timeStart = NULL;
-        timeEnd = NULL;
-        timeHour = NULL;
-        timeMinute = NULL;
-
-
-        repeat = NULL;
-        daily = NULL;
-        weekly = NULL;
-        other = NULL;
-        monday = NULL;
-        tuesday = NULL;
-        wednesday = NULL;
-        thursday = NULL;
-        friday = NULL;
-        saturday = NULL;
-        sunday = NULL;
-
-        note = NULL;
-    }
+//    // Default Constructor
+//    public Event() {
+//        title = NULL;
+//        location = NULL;
+//        gMaps = NULL;
+//        gDatabase = NULL;
+//
+//
+//        defaultEventStart = NULL;
+//        timeAMPM = NULL;
+//        timeStart = NULL;
+//        timeEnd = NULL;
+//        timeHour = NULL;
+//        timeMinute = NULL;
+//
+//
+//        repeat = NULL;
+//        daily = NULL;
+//        weekly = NULL;
+//        other = NULL;
+//        monday = NULL;
+//        tuesday = NULL;
+//        wednesday = NULL;
+//        thursday = NULL;
+//        friday = NULL;
+//        saturday = NULL;
+//        sunday = NULL;
+//
+//        note = NULL;
+//    }
 
     public void setTitle(String title) {
         this.title = title;
