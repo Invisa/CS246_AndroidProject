@@ -21,8 +21,7 @@ public class DbHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String query = String.format("CREATE TABLE &s (ID INTEGER PRIMARY KEY AUTOINCREMENT, %s TEXT NOT NULL",
-                                      DB_TABLE, DB_COLUMN);
+        String query = String.format("CREATE TABLE %s (ID INTEGER PRIMARY KEY AUTOINCREMENT,%s TEXT NOT NULL);",DB_TABLE,DB_COLUMN);
         db.execSQL(query);
     }
 
@@ -37,7 +36,8 @@ public class DbHelper extends SQLiteOpenHelper{
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(DB_COLUMN, task);
-        db.insertWithOnConflict(DB_TABLE, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+        db.insertWithOnConflict(DB_TABLE,null, values, SQLiteDatabase.CONFLICT_REPLACE);
+        db.close();
     }
 
     public void deleteTask(String task){

@@ -31,6 +31,7 @@ public class Event {
     String note;
 
 
+
     // Default Constructor
     public Event() {
         title = null;
@@ -61,6 +62,7 @@ public class Event {
 
         note = null;
     }
+
 
     public void setTitle(String title) {
         this.title = title;
