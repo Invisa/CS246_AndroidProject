@@ -1,10 +1,9 @@
 package com.timecrunch.timecrunch;
 
 public class Event {
-
     // Event
     String title;
-    String note;
+    // Storage
     Boolean gDatabase; // local is 0; external/google is 1;
 
     // Location
@@ -29,36 +28,38 @@ public class Event {
     Boolean saturday;
     Boolean sunday;
 
+    String note;
+
 
     // Default Constructor
     public Event() {
-        title = NULL;
-        location = NULL;
-        gMaps = NULL;
-        gDatabase = NULL;
+        title = null;
+        location = null;
+        gMaps = null;
+        gDatabase = null;
 
 
-        defaultEventStart = NULL;
-        timeAMPM = NULL;
-        timeStart = NULL;
-        timeEnd = NULL;
-        timeHour = NULL;
-        timeMinute = NULL;
+        defaultEventStart = null;
+        timeAMPM = null;
+        timeStart = null;
+        timeEnd = null;
+        timeHour = 0;
+        timeMinute = 0;
 
 
-        repeat = NULL;
-        daily = NULL;
-        weekly = NULL;
-        other = NULL;
-        monday = NULL;
-        tuesday = NULL;
-        wednesday = NULL;
-        thursday = NULL;
-        friday = NULL;
-        saturday = NULL;
-        sunday = NULL;
+        repeat = null;
+        daily = null;
+        weekly = null;
+        other = null;
+        monday = null;
+        tuesday = null;
+        wednesday = null;
+        thursday = null;
+        friday = null;
+        saturday = null;
+        sunday = null;
 
-        note = NULL;
+        note = null;
     }
 
     public void setTitle(String title) {
