@@ -1,9 +1,10 @@
 package com.timecrunch.timecrunch;
 
 public class Event {
+
     // Event
     String title;
-    // Storage
+    String note;
     Boolean gDatabase; // local is 0; external/google is 1;
 
     // Location
@@ -28,39 +29,37 @@ public class Event {
     Boolean saturday;
     Boolean sunday;
 
-    String note;
-
 
 
     // Default Constructor
     public Event() {
-        title = null;
-        location = null;
-        gMaps = null;
-        gDatabase = null;
+        title = NULL;
+        location = NULL;
+        gMaps = NULL;
+        gDatabase = NULL;
 
 
-        defaultEventStart = null;
-        timeAMPM = null;
-        timeStart = null;
-        timeEnd = null;
-        timeHour = 0;
-        timeMinute = 0;
+        defaultEventStart = NULL;
+        timeAMPM = NULL;
+        timeStart = NULL;
+        timeEnd = NULL;
+        timeHour = NULL;
+        timeMinute = NULL;
 
 
-        repeat = null;
-        daily = null;
-        weekly = null;
-        other = null;
-        monday = null;
-        tuesday = null;
-        wednesday = null;
-        thursday = null;
-        friday = null;
-        saturday = null;
-        sunday = null;
+        repeat = NULL;
+        daily = NULL;
+        weekly = NULL;
+        other = NULL;
+        monday = NULL;
+        tuesday = NULL;
+        wednesday = NULL;
+        thursday = NULL;
+        friday = NULL;
+        saturday = NULL;
+        sunday = NULL;
 
-        note = null;
+        note = NULL;
     }
 
 
@@ -75,7 +74,7 @@ public class Event {
     /*
     public void () setDefaultTimeStart() {
         // Parse in string from google calander day events
-        //find first available  empty time Set timeStart to next hour (ex: if its 7:55, set to 8:00)
+        //find first available empty time Set timeStart to next hour (ex: if its 7:55, set to 8:00)
         //return empty time to defaultTimeStart
 
         //rules 1 must be empty in calender
