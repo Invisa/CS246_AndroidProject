@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreferencext
+        android:title = "Google Account Username"
+        android:key = "user_name"
+        android:summary = "Set your google user name." />
+    <EditTextPreferencext
+        android:title = "Google Account Password"
+        android:key = "google_password"
+        android:summary = "Set your google user password." />
+
+</PreferenceScreen>

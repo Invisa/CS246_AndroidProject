@@ -1,9 +1,13 @@
 package com.timecrunch.timecrunch;
 
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.ClipData;
 import android.content.DialogInterface;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.preference.PreferenceFragment;
+import android.preference.SwitchPreference;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
@@ -46,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+        mDrawerLayout = (DrawerLayout) findViewById(android.R.id.drawer);
         mToggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open,R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
@@ -56,6 +60,16 @@ public class MainActivity extends AppCompatActivity {
         firstTask = (ListView)findViewById(R.id.firstTask);
 
         loadTaskList();
+
+        Fragment fragment = new SettingsScreen();
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        if(savedInstanceState == null) {
+            fragmentTransaction.add(R.id.relative_layout, fragment, "settings_fragment");
+            fragmentTransaction.commit();
+        }
+        else {
+            fragment = getFragmentManager().findFragmentById("settings_fragment");
+        }
 
     }
     /**
@@ -130,4 +144,6 @@ public class MainActivity extends AppCompatActivity {
         loadTaskList();
 
     }
+
+
 }
